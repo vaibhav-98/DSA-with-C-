@@ -6,7 +6,7 @@ int main () {
     cin>> a ;
     cout<< a ;
     cout << endl ;
- cout<< "hello " ;
+ cout<< "hello vaibhav " ;
  return 0 ;
 
 }
