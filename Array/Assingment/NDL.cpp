@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std ;
 
-//  Dutch NATIONAL Flag Algo ( 2 pointer approach)
+//  Dutch National Flag Algo ( 2 pointer approach)
 
 void moveAllNegToLeft(int a[] , int n) {
   int l=0,h=n;
