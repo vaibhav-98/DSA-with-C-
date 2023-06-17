@@ -15,21 +15,21 @@ int findOcc(vector<int>arr , int target){
 
     while (start <= end) 
     {
-        if (mid == target)
+        if (arr[mid] == target)
         {
             ans = mid ;    // store ans
             end = mid - 1; // left search
         }
-        else if (target < mid )
+        else if (target < arr[mid] )
         {
             end = mid - 1; // left seach 
         }
-        else if (target > mid ) 
+        else if (target > arr[mid] ) 
         {
             start = mid + 1 ; // Right search
         }
 
-        mid = start = (end - start)/2;
+        mid = start + (end - start)/2;
          
     }
     return ans ;
@@ -44,7 +44,7 @@ int main () {
     int target = 4;
 
     int ans = findOcc(v,target);
-    cout<<"ans"<<ans<<endl;
+    cout<< "ans "<< ans << endl;
     return 0;
 
 }
