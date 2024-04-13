@@ -15,7 +15,7 @@ void printArray(int arr[],int size){
 
 void incr (int arr[],int size){
 
-    arr[1]=arr[1]+10;
+    arr[1]=arr[1]+11 ;
 
     printArray(arr,size);
 }
