@@ -4,7 +4,7 @@
 using namespace std;
 
 
-int main () {
+ int main () {
    
 //    char name[100] ;
 
@@ -13,22 +13,25 @@ int main () {
 //    cout<< "Apka naam " << name << " hai " ;
 
 
-// char name [6] ;
+char name [100] ;
 
-//  cin >> name ;
+ cin >> name ;
 
-//  for (int i = 0 ; i < 8 ; i++ ) {
-//     cout << "index: " << i << "value: " << name[i] << endl; 
-//  }
+ for (int i = 0 ; i < 8 ; i++ ) {
+    cout << "index: " << i << " value: " << name[i] << endl; 
+ }
+
+ int value = (int)name[8];
+ cout << "value is : " << value << endl;
 
 
 
-  char arr[5];
-    cin>> arr[2] ;
-    cin>> arr[50];
-    cin.getline(arr,50) ;
+//   char arr[5];
+//     cin>> arr[2] ;
+//     cin>> arr[50];
+//     cin.getline(arr,50) ;
 
-  cout << arr ;
+//   cout << arr ;
 
-    return 0;
-}
+//     return 0;
+ }

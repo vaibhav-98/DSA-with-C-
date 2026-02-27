@@ -15,7 +15,7 @@ int getLength( char name[]) {
     return length;
 }
 
-int reverseCharArray(char name[]) {
+void reverseCharArray(char name[]) {
       int i =0;
       int n = getLength(name);
       int j = n - 1 ;
