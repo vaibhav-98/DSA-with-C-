@@ -37,7 +37,7 @@ int findOcc(vector<int>arr , int target){
     
 } 
 
-//======================last occ================
+//====================== last occ ====================== //
 
 int lastOcc(vector<int>arr , int target) {
 
