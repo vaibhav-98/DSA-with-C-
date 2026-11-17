@@ -5,7 +5,7 @@
 #include<vector>
 using namespace std ;
 
-int findOcc(vector<int>arr , int target){
+int findfirstOcc(vector<int>arr , int target){
 
     int start = 0;
     int end = arr.size() - 1;
@@ -39,7 +39,7 @@ int findOcc(vector<int>arr , int target){
 
 //====================== last occ ====================== //
 
-int lastOcc(vector<int>arr , int target) {
+int findlastOcc(vector<int>arr , int target) {
 
     int start = 0;
     int end = arr.size() - 1 ;
@@ -75,16 +75,18 @@ int main () {
     vector<int>v{1,3,4,4,4,4,4,6,7,9};
     int target = 4;
 
-    int firstOcc = findOcc(v,target);
+    int firstOcc = findfirstOcc(v,target);
     cout<<"first occ "<< firstOcc<<endl;
     
 
-    int lastOcc1 = lastOcc(v,target);
-    cout<< "last occ "<< lastOcc1 << endl;
+    int lastOcc = findlastOcc(v,target);
+    cout<< "last occ "<< lastOcc << endl;
 
-    int totalOcc =  lastOcc1 - firstOcc + 1;
+    int totalOcc = 0;
 
-    cout<< "totalOcc " << totalOcc << endl ;
+   if (firstOcc != -1 && lastOcc != -1) {
+        totalOcc = lastOcc - firstOcc + 1;
+     }
 
     return 0;
 
